@@ -7,8 +7,11 @@ function handleUpdate() {
   const suffix = this.dataset.sizing || '';
   console.log(suffix);
 
-//   changing our css variables
-document.documentElement.style.setProperty(`--${this.name}`, this.value);
+  //   changing our css variables
+  document.documentElement.style.setProperty(
+    `--${this.name}`,
+    this.value + suffix
+  );
 }
 
 // Event listeners for changes and mouse moves
