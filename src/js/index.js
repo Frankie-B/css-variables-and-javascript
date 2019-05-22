@@ -4,7 +4,8 @@ const inputs = document.querySelectorAll('.controls input');
 
 // Function for updating css variables
 function handleUpdate() {
-  console.log(this.value);
+  const suffix = this.dataset.sizing || '';
+  console.log(suffix);
 }
 
 // Event listeners for changes and mouse moves
